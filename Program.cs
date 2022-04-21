@@ -69,11 +69,12 @@ namespace _2022._04._20.utas
         {
             if (a.tipus!="JGY")
             {
-                if (a.felszallas.CompareTo(a.berlet_ervenyesseg))
+                if (a.felszallas.CompareTo(a.berlet_ervenyesseg)==1)
                 {
-
+                    return false;
                 }
             }
+            return true;
         }
 
         static void Main(string[] args)
